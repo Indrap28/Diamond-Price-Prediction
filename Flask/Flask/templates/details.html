@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Prediction</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+ <style type="text/css">
+   body {
+       background-image: url(" https://png.pngtree.com/thumb_back/fh260/background/20210429/pngtree-abstract-white-diamond-shape-background-image_677813.jpg");
+   }
+ 
+  </style>
+  <!--  =======================================================
+  * Template Name: Day
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+ 
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html"></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="" href="/">Home</a></li>
+       
+          <li><a class="nav-link scrollto active" href="#portfolio">Prediction</a></li>
+        
+         </ul>
+   
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <div class="content">
+
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 mr-auto" style="color:rgb(6, 144, 190)">
+                  <br>
+                  <h3 class="mb-3" style="color:rgb(179, 58, 58);font-family:verdana;"><b> DIAMOND PRICE PREDICTION</b></h3>
+                  <p>Gemstones like diamonds are always in demand because of their value in the investment market. This makes it very important for diamond dealers to predict its price</p>
+              </div>
+
+              <div class="col-md-8">
+                  <div class="box">
+                      <h3 class="heading" style="color:rgb(18, 34, 38)">Please fill the details</h3>
+                 
+                      <form action="{{ url_for('predict')}}"method="post">
+                          <div class="form-group row">
+                              <div class="col-md-5">
+                                  <label for="carats" style="color:rgb(7, 140, 250)">Carats</label>
+                                  <input type="number" class="form-control" min="0.2" max="5.01" name="carats" id="carats" required="required" />
+                              </div>
+                          </div>
+                          <br>
+                          <div class="form-group row">
+                            <div class="col-md-5">
+                          <label for="cut" style="color:rgb(7, 140, 250)">Cut</label>
+                          <select id="cut" name="cut" required="required">
+                            <option value= >Select</option>
+                              <option value=0>Fair</option>
+                              <option value=1>Good</option>
+                              <option value=2>Ideal</option>
+                              <option value=3>Premium</option>
+                              <option value=4>Very Good</option>
+                                               
+                  
+                          </select> &nbsp;&nbsp;<br>
+                        </div>
+                      </div>
+                  <br>
+           
+                  <div class="form-group row">
+                    <div class="col-md-5">
+                  <label for="color" style="color:rgb(7, 140, 250)">Color</label>
+                  <select id="color" name="color" required="required">
+                    <option value= >Select</option>
+                      <option value=0>D</option>
+                      <option value=1>E</option>
+                      <option value=2>F</option>
+                      <option value=3>G</option>
+                      <option value=4>H</option>
+                      <option value=5>I</option>
+                      <option value=6>J</option> 
+                  </select> &nbsp;&nbsp;<br>
+                </div>
+              </div>
+          <br>
+              <div class="form-group row">
+                <div class="col-md-5">
+              <label for="clarity" style="color:rgb(7, 140, 250)">Clarity</label>
+              <select id="clarity" name="clarity" required="required">
+                <option value= >Select</option>
+                  <option value=0>I1</option>
+                  <option value=1>IF</option>
+                  <option value=2>SI1</option>
+                  <option value=3>SI2</option>
+                  <option value=4>VS1</option>
+                  <option value=5>VS2</option>
+                  <option value=6>VVS1</option> 
+                  <option value=6>VVS2</option> 
+              </select> &nbsp;&nbsp;<br>
+            </div>
+          </div>
+        <br>
+                    
+                          <div class="form-group row">
+                            <div class="col-md-5">
+                                <label for="depth" style="color:rgb(7, 140, 250)">Depth</label>
+                                <input type="number" class="form-control" min="43" max="79" name="depth" id="depth" required="required" />
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <div class="col-md-5">
+                              <label for="table" style="color:rgb(7, 140, 250)">Table</label>
+                              <input type="number" class="form-control" min="43" max="95" name="table" id="table" required="required" />
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="col-md-5">
+                            <label for="x" style="color:rgb(7, 140, 250)">Value of X</label>
+                            <input type="number" class="form-control" min="0" max="10.74" name="x" id="x" required="required" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-md-5">
+                          <label for="y" style="color:rgb(7, 140, 250)">Value of Y</label>
+                          <input type="number" class="form-control" min="0" max="58.9" name="y" id="y" required="required" />
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-5">
+                        <label for="z" style="color:rgb(7, 140, 250)">Value of Z</label>
+                        <input type="number" class="form-control" min="0" max="31.8" name="z" id="z" required="required" />
+                    </div>
+                </div>
+
+                          <br>
+                          <button type="submit" class="btn btn-success btn-lg" style="color:rgb(237, 239, 241)">Submit</button>
+                      </form>
+                      <br>
+                      <b>  <h1 style="color:Black"> {{ prediction_text }}<b></h1>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- ======= Breadcrumbs ======= -->
+   
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Day</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
